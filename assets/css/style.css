@@ -1,0 +1,561 @@
+/* RESETS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--main-font);
+    color: var(--color-primary);
+}
+
+
+
+/* Variables */
+
+ :root {
+    --main-font: 'Montserrat', sans-serif;
+    --review-font: 'Mina', sans-serif;
+    --color-primary: #fff;
+    --color-secondary: #E2A000;
+    --background-color: #282828;
+  } 
+
+
+  /* Navigation */
+
+  .nav-custom {
+    background: rgba(0, 0, 0, 0.9)!important;
+  }
+
+  .nav-custom li{
+      margin: 0 9px;
+      
+  }
+  .nav-custom li.active{
+      position: relative;
+  }
+  .nav-custom li.active::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 40px;
+      background-color: var(--color-secondary);
+      transform: translateX(50%);
+      border-radius: 5px;
+      
+  }
+
+
+
+  .nav-custom a{
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--color-primary)!important;
+  }
+  .nav-custom a:hover, .nav-custom a:active{
+      color: var(--color-secondary)!important;
+  }
+
+ 
+
+  .nav-toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .nav-toggle-icon {
+      background-color: var(--color-secondary);
+      width: 40px;
+      height: 5px;
+      margin: 2px;
+      border-radius: 5px;
+  }
+
+  .navbar-toggler {
+      border: none;
+  }
+
+  .btn-nav {
+      color: var(--color-primary);
+      background-color: var(--color-secondary);
+  }
+  .btn-nav:hover {
+      color: var(--color-secondary);
+      background-color: var(--color-primary);
+  }
+
+  /* Jumbotron */
+
+  .jumbotron {
+      background:url(../img/hero\ image.png)center center, linear-gradient(89.62deg, #0B0B0B 47.11%, rgba(44, 44, 84, 0) 92.11%);
+      background-color: #fff;
+      background-blend-mode: luminosity;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 670px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+ 
+    .jumbotron-text {
+        color: var(--color-primary);
+        font-size: 44px;
+        font-weight: bold;
+        line-height: 60px;  
+    }
+    
+    .jumbotron-text span {
+        color: var(--color-secondary)!important;
+    }
+
+    .btn-jumbotron {
+        color: var(--color-primary);
+        border: 2px solid var(--color-secondary);
+        background-color: #000;
+        border-radius: 5px;
+        padding: 8px 22px;
+        font-size: 18px;
+    }
+
+    .btn-jumbotron:hover {
+        color: var(--color-secondary);
+        border: 2px solid #fff;
+    }
+
+    .jumbo-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .jumbo-icon img:hover {
+        background-color: var(--color-secondary);
+    }
+
+    .jumbo-icon img {
+        margin: 10px 0;
+        background-color: #000;
+        border-radius: 50%;
+    }
+
+    .mobile-jumbo {
+        background-color: #010101;
+        display: none;
+        border: none;
+        padding: 30px 0;
+    }
+
+    .mobile-text {
+        font-size: 38px;
+        line-height: 50px;
+        
+    }
+
+    #about {
+        margin: 0;
+        padding-top: 50px;
+        margin-bottom: 32px;
+    }
+
+    /* #about .container {
+        margin: 0 20px!important;
+    } */
+    .read-more {
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+
+    .about-image {
+        /* height: 600px; */
+        height: 100%;
+        /* min-width: 100%; */
+        /* border-radius: 0px 100px 0px 0px; */
+    }
+    
+    .about-image img {
+        /* object-fit: cover; */
+        height: 100%;
+        width: 100%;
+    }
+
+    .about-header {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    .about-name {
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    .about-text {
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    .about-btn {
+        color: var(--color-secondary);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .about-btn:hover{
+        color: var(--color-primary);
+    }
+
+    .about-btn span {
+        margin-left: 15px;
+    }
+
+    .about2 {
+        border-radius: 0 30px;
+        background-color: #040506;
+        margin-left: 0;
+        color: var(--color-secondary);
+        
+    }
+
+    .about-count {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    #about .photo {
+        font-size: 48px;
+        font-weight: bold;
+        text-align: justify;
+    }
+
+    #about .photo-text {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .about-text-container {
+        padding-left: 50px;
+    }
+
+    /* Portfolio */
+
+    #portfolio {
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .portfolio-header {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .col-md-3 .card {
+        box-shadow: 2px 7px 16px rgba(11, 11, 11, 0.25);
+        background-color: transparent;
+        border-radius: 5px;
+    }
+
+    #portfolio .card-body {
+        background: #0F0F0F;
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    #portfolio .card-text {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    /* Projects */
+
+    #projects {
+        margin: 0;
+        padding-top: 50px;
+        background: #0F0F0F;
+    }
+
+    .projects-header {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-align: center;
+        color: var(--color-secondary);
+    }
+
+    #projects .col-md-8, #projects .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+       /* projects */
+
+       .col-12 .card {
+        box-shadow: 2px 7px 16px rgba(11, 11, 11, 0.25);
+        background-color: transparent;
+        border-radius: 5px;
+    }
+
+    #projects .btn {
+        width: 250px;
+        height: 70px;
+        margin: 15px;
+        font-weight: bold;
+    }
+
+    .project-btn1 {
+        color: var(--color-primary)!important;
+        background-color: var(--color-secondary)!important;
+    }
+    
+    .project-btn2 {
+        color: var(--color-primary)!important;
+        border: 2px solid var(--color-secondary)!important;
+    }
+
+
+
+
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (max-width: 1200px) { 
+      /* About */
+      .about-header,
+      .about-name,
+      .about-text {
+          margin-bottom: 0;
+      }
+      .about-text {
+          line-height: 30px;
+      }
+
+      /* Portfolio */
+
+      #portfolio .card-text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+   
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .about-name {
+        font-size: 44px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+       /* Navigation */
+       .nav-custom li.active::after{
+        transform: translateX(30%);
+        border-radius: 5px;  
+        }
+
+        .nav-custom {
+            background-color: transparent!important;
+        }
+
+        /* Jumbotron */
+
+        .jumbotron {
+            height: 420px;
+            background-attachment: initial;
+            margin-bottom: 0;
+        }
+
+        .jumbo-col,.jumbo-icon {
+            display: none;
+        } 
+
+        .mobile-jumbo {
+            display: block;
+        }
+
+     
+
+        
+
+      
+  
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .about-name {
+        font-size: 35px;
+    }
+
+    .about-text-container {
+        padding-left: 30px;
+        padding-right: 0;
+    }
+
+    .about-image {
+        height: 420px;
+    }
+
+    .about-text {
+        line-height: 21.8px;
+    }
+
+    /* Poerfolio */
+    #portfolio .card-text {
+        font-size: 13px;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+
+    /* Navigation */
+    .mobile-logo {
+        width: 96px;
+        height: 35px;
+    }
+
+    .mobile-text {
+        font-size: 24px;
+        line-height: 34px;
+        padding: 20px 0;
+    }
+
+    .btn-jumbotron {
+        padding: 8px 22px;
+        font-size: 14px;
+    }
+
+    /* About */
+
+    .mobile-about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about-text-container {
+        padding-left: 0px;
+        padding-right: 0;
+        text-align: center !important;
+    }
+
+    .about-name,
+    .about-text {
+        text-align: center!important;
+    }
+
+    .about2 {
+        border-radius: 0px 0px 0px 30px;
+        width: 100%;
+    }
+
+    /* .mobile-about .col-md-6 {
+        padding-right: 0!important;
+    } */
+
+    .about-header {
+        font-size: 22px;
+        line-height: 42px;
+    }
+
+    .about-name {
+        font-size: 24px;
+        line-height: 40px;
+
+    }
+
+    .about-text {
+        font-size: 13px;
+    }
+
+    .about-btn {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    #about .photo {
+        font-size: 24px;
+    }
+    
+    #about .photo-text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+     /* Portfolio */
+
+     .portfolio-header {
+        font-size: 22px;
+        line-height: 42px;
+    
+    }
+
+     #portfolio .col-md-3 {
+        margin-bottom: 30px;
+    }
+
+    #portfolio .card-body p {
+        font-size: 18px;
+    }
+
+    /* Projects */
+    .projects-header {
+        font-size: 22px;
+        line-height: 42px;
+    
+    }
+
+    #projects {
+        background: #010101;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    /* Jumbotron */
+
+    .jumbotron {
+        height: 320px;
+      
+    }
+
+    .mobile-text {
+        font-size: 24px;
+        line-height: 34px;
+        padding: 20px 0;
+    }
+
+    .btn-jumbotron {
+        padding: 8px 22px;
+        font-size: 14px;
+    }
+
+    /* About */
+
+    .about-text {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+   
+   
+}
+
+
+
+   /* Media queries */
+       /* Extra small devices (portrait phones, less than 576px) */
