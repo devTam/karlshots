@@ -56,6 +56,7 @@ body {
 
 
 
+
   .nav-custom a{
       font-size: 18px;
       font-weight: bold;
@@ -89,6 +90,8 @@ body {
   .btn-nav {
       color: var(--color-primary);
       background-color: var(--color-secondary);
+      width: 150px;
+      
   }
   .btn-nav:hover {
       color: var(--color-secondary);
@@ -537,6 +540,11 @@ body {
         .navbar-nav {
             text-align: center;
         }
+
+        .btn-nav {
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
     
         
 
@@ -777,6 +785,13 @@ body {
 
    
    
+}
+
+@media only screen and (max-width: 466px) {
+    .carousel-inner {
+        width: 206px;
+        margin: 0 auto;
+    }
 }
 
 
