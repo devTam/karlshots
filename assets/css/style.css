@@ -126,7 +126,9 @@ body {
         border: 2px solid var(--color-secondary);
         background-color: #000;
         border-radius: 5px;
-        padding: 8px 22px;
+        /* padding: 8px 22px; */
+        height: 70px;
+        width: 250px;
         font-size: 18px;
     }
 
@@ -290,6 +292,7 @@ body {
     #projects {
         margin: 0;
         padding-top: 50px;
+        margin-bottom: 50px;
         background: #0F0F0F;
     }
 
@@ -331,6 +334,136 @@ body {
         border: 2px solid var(--color-secondary)!important;
     }
 
+    /* Review */
+
+    #review {
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .review-header {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    #review .card {
+        background-color: transparent;
+        border: none;
+    }
+    
+    /* Contact */
+
+    #contact {
+        margin: 0;
+        padding-top: 50px;
+        background: #0B0B0B;
+        /* padding-bottom: 50px */
+    }
+
+    #contact .header {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+
+
+
+    #contact a {
+        text-decoration: none;
+        color: #fff!important;
+        line-height: 24px;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .footer-social a {
+        margin: 0 10px;
+    }
+
+    .footer-social a:hover {
+        color: var(--color-secondary) ;
+    }
+
+    #contact .footer-btn {
+        background-color: var(--color-secondary);
+        color: var(--color-primary);
+        border-radius: 5px;
+        width: 150px;
+        height: 50px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .footer-input {
+        border: 1px solid var(--color-primary);
+        background-color: transparent;
+        height: 50px;
+        width: 250px;
+    }
+
+    ::placeholder {
+        padding-left: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--color-primary);
+    }
+
+    #contact hr {
+        background-color: var(--color-secondary);
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    #contact .copy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .copy p {
+        margin: 0 20px;
+    }
+
+    /* Mobile contact */
+
+    .mobile .header {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .mobile p {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .mobile hr {
+        width: 100%;
+    }
+
+    .mobile-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .mobile .footer-social {
+        justify-content: center;
+        align-items: center;
+    }
+
+
 
 
 
@@ -366,13 +499,18 @@ body {
 @media (max-width: 992px) { 
        /* Navigation */
        .nav-custom li.active::after{
-        transform: translateX(30%);
+        transform: translateX(-50%);
+        left: 50%;
         border-radius: 5px;  
         }
 
-        .nav-custom {
-            background-color: transparent!important;
+      
+
+        .navbar-nav {
+            text-align: center;
         }
+    
+        
 
         /* Jumbotron */
 
@@ -399,6 +537,10 @@ body {
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
+    /* Navigation */
+    
+    
+    
     .about-name {
         font-size: 35px;
     }
@@ -416,7 +558,7 @@ body {
         line-height: 21.8px;
     }
 
-    /* Poerfolio */
+    /* Portfolio */
     #portfolio .card-text {
         font-size: 13px;
     }
@@ -522,6 +664,14 @@ body {
 
     #projects {
         background: #010101;
+    }
+
+    /* Review */
+
+    .review-header {
+        font-size: 22px;
+        line-height: 42px;
+    
     }
 }
 /* Small devices (landscape phones, 576px and up) */
