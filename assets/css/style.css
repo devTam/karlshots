@@ -328,10 +328,19 @@ body {
         color: var(--color-primary)!important;
         background-color: var(--color-secondary)!important;
     }
+    .project-btn1:hover {
+        color: var(--color-secondary)!important;
+        background-color: var(--color-primary)!important;
+    }
     
     .project-btn2 {
         color: var(--color-primary)!important;
         border: 2px solid var(--color-secondary)!important;
+    }
+
+    .project-btn2:hover {
+        color: var(--color-secondary)!important;
+        border: 2px solid var(--color-primary)!important;
     }
 
     /* Review */
@@ -385,10 +394,12 @@ body {
 
     .footer-social a {
         margin: 0 10px;
+        border: none;
+        border-radius: 50%;
     }
 
     .footer-social a:hover {
-        color: var(--color-secondary) ;
+        background-color: var(--color-secondary) ;
     }
 
     #contact .footer-btn {
@@ -400,16 +411,22 @@ body {
         font-weight: bold;
         margin-top: 20px;
     }
+    #contact .footer-btn:hover {
+        background-color: var(--color-primary);
+        color: var(--color-secondary);
+      
+    }
 
     .footer-input {
         border: 1px solid var(--color-primary);
         background-color: transparent;
         height: 50px;
         width: 250px;
+        color: var(--color-primary);
+        padding-left: 20px;
     }
 
     ::placeholder {
-        padding-left: 20px;
         font-size: 14px;
         font-weight: 500;
         color: var(--color-primary);
@@ -430,6 +447,7 @@ body {
 
     .copy p {
         margin: 0 20px;
+        font-size: 14px;
     }
 
     /* Mobile contact */
@@ -461,6 +479,10 @@ body {
     .mobile .footer-social {
         justify-content: center;
         align-items: center;
+    }
+
+    .mobile .footer-social a {
+      margin: 0 20px;
     }
 
 
