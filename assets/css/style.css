@@ -653,6 +653,7 @@ body {
     .btn-jumbotron {
         padding: 8px 22px;
         font-size: 14px;
+        font-weight: bold;
     }
 
     /* About */
