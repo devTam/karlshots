@@ -130,6 +130,7 @@ body {
         height: 70px;
         width: 250px;
         font-size: 18px;
+        font-weight: bold;
     }
 
     .btn-jumbotron:hover {
