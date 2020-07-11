@@ -1,3 +1,3 @@
 const loader = document.querySelector('.preloader');
 
-window.onload(loader.classList.add('hidden'));
+window.addEventListener('load', () => loader.classList.add('hidden')); 
