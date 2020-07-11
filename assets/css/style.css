@@ -45,7 +45,7 @@ body {
   /* Preloader */
 
   .preloader {
-      background-color: rgba(40,40,40,0.9);
+      background-color: rgb(40,40,40);
       position: fixed;
       top: 0;
       left: 0;
