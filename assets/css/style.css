@@ -291,6 +291,14 @@ body {
         margin-bottom: 30px;
     }
 
+    #portfolio .card {
+        transition: transform .5s;
+    }
+    
+    #portfolio .card:hover {
+        transform: scale(1.05);
+    }
+
     .col-md-3 .card {
         box-shadow: 2px 7px 16px rgba(11, 11, 11, 0.25);
         background-color: transparent;
