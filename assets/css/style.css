@@ -101,7 +101,7 @@ body {
   /* Jumbotron */
 
   .jumbotron {
-      background:url('https://i.postimg.cc/4d9bVKm9/hero-image.png')center center, linear-gradient(89.62deg, #0B0B0B 47.11%, rgba(44, 44, 84, 0) 92.11%);
+      background:url('https://i.postimg.cc/zDQ24Hy2/hero-image-min.png')center center, linear-gradient(89.62deg, #0B0B0B 47.11%, rgba(44, 44, 84, 0) 92.11%);
       background-color: #fff;
       background-blend-mode: luminosity;
       background-size: cover;
