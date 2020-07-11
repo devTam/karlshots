@@ -13,6 +13,8 @@ body {
     background-color: var(--background-color);
     font-family: var(--main-font);
     color: var(--color-primary);
+    /* ttest */
+    position: relative;
 }
 
 
@@ -27,6 +29,19 @@ body {
     --background-color: #282828;
   } 
 
+  /* test scroll spy */
+  .nav-tabs {
+      border-bottom: none;
+  }
+
+
+
+  a.nav-link.active {
+      border: none;
+      background-color: transparent!important;
+      color: var(--color-secondary)!important;
+  }
+
 
   /* Navigation */
 
@@ -38,7 +53,7 @@ body {
       margin: 0 9px;
       
   }
-  .nav-custom li.active{
+   .nav-custom li.active{
       position: relative;
   }
   .nav-custom li.active::after{
@@ -52,7 +67,9 @@ body {
       transform: translateX(50%);
       border-radius: 5px;
       
-  }
+  } 
+
+  
 
 
 
@@ -62,7 +79,7 @@ body {
       font-weight: bold;
       color: var(--color-primary)!important;
   }
-  .nav-custom a:hover, .nav-custom a:active{
+  .nav-custom a:hover{
       color: var(--color-secondary)!important;
   }
 

@@ -15,10 +15,10 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar-example">
     <!-- Navigation -->
     <nav
-      class="navbar nav-custom navbar-expand-lg navbar-dark bg-dark fixed-top"
+      class="navbar nav-custom navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar-example"
     >
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
@@ -41,10 +41,10 @@
           </div>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto nav-tabs" role="tablist">
             <li class="nav-item active">
               <a class="nav-link" href="#"
-                >HOME <span class="sr-only">(current)</span></a
+              >HOME <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
