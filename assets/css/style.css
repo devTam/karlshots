@@ -31,13 +31,27 @@ body {
 
   /* test scroll spy */
   .nav-tabs {
-      border-bottom: none;
+      border: none!important;
+  }
+
+  /* fix border around nav link on hover */
+  .nav-tabs .nav-link:hover, .nav-tabs .nav-link:active {
+      border: none;
+  }
+
+  /* fix home button retaining border */
+
+  .nav-tabs .nav-link {
+      border: none;
+  }
+
+  a.nav-link.active:hover {
+    border: none!important;
   }
 
 
-
   a.nav-link.active {
-      border: none;
+    border: none!important;
       background-color: transparent!important;
       color: var(--color-secondary)!important;
   }
@@ -115,6 +129,7 @@ body {
       font-size: 18px;
       font-weight: bold;
       color: var(--color-primary)!important;
+      transition: all .5s;
   }
   .nav-custom a:hover{
       color: var(--color-secondary)!important;
