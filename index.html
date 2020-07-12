@@ -10,8 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Mina&family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Animate.cc -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <!-- AOS LIBRARY -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -79,7 +86,7 @@
     <section class="jumbotron" id="home">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 jumbo-col">
+          <div class="col-lg-8 jumbo-col" >
             <p class="jumbotron-text">
               I pay close attention to<br />
               <span>details</span>, every single <span>pixel</span>
@@ -93,7 +100,7 @@
 
           <div class="col-4 jumbo-icon">
             <a href="/"
-              ><img src="./assets/img/icons/TW.svg" alt="twitter"
+              ><img src="./assets/img/icons/TW.svg" alt="twitter" class="animate__animated animate__bounceInDown"
             /></a>
             <a href="/"
               ><img src="./assets/img/icons/FB.svg" alt="facebook"
@@ -577,13 +584,16 @@
           </div>
     </section>
 
-
-
     <!-- Bootstrap scripts -->
     <script src="./assets/js/jquery.js" type="text/javascript"></script>
     <script src="./assets/js/popper.js" type="text/javascript"></script>
     <script src="./assets/js/bootstrap.js" type="text/javascript"></script>
     <!-- Custom script -->
     <script src="./assets/js/custom.js"></script>
+    <!-- AOS LIBRARY -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

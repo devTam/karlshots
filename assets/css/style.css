@@ -95,6 +95,30 @@ body {
 
 
   /* Navigation */
+  /* Hamburger Menu */
+  .nav-toggle, .one, .two, .three {
+      transition: all .5s;
+  }
+
+  .one{
+    transform: rotate(45deg) translate(2px, 16px);
+  }
+  .two{
+    transform: translateX(200px);
+  }
+  .three{
+    transform: rotate(-45deg) translateY(-14px);
+  }
+
+  .nav-con {
+      transform: translateX(10px);
+  }
+
+  .navbar-toggler:focus {
+      outline: none;
+  }
+
+  /* End of Hamburger menu */
 
   .nav-custom {
     background: rgba(0, 0, 0, 0.9)!important;
