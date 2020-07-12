@@ -10,15 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Mina&family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <!-- AOS LIBRARY -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Animate.cc -->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
   />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
-    <!-- AOS LIBRARY -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -86,27 +86,27 @@
     <section class="jumbotron" id="home">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 jumbo-col" >
+          <div class="col-lg-8 jumbo-col" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000" style="overflow: hidden;">
             <p class="jumbotron-text">
               I pay close attention to<br />
               <span>details</span>, every single <span>pixel</span>
               <br />matters to me<span>.</span>
             </p>
 
-            <button type="button" class="btn btn-outline btn-jumbotron">
+            <button type="button" class="btn btn-outline btn-jumbotron animate__animated animate__rubberBand" style="animation-delay: 1500ms;">
               BOOK A SESSION
             </button>
           </div>
 
           <div class="col-4 jumbo-icon">
             <a href="/"
-              ><img src="./assets/img/icons/TW.svg" alt="twitter" class="animate__animated animate__bounceInDown"
+              ><img src="./assets/img/icons/TW.svg" alt="twitter" class="animate__animated animate__bounceInDown" style="animation-delay: 400ms;"
             /></a>
             <a href="/"
-              ><img src="./assets/img/icons/FB.svg" alt="facebook"
+              ><img src="./assets/img/icons/FB.svg" alt="facebook"class="animate__animated animate__bounceInDown" style="animation-delay: 200ms;"
             /></a>
             <a href="/"
-              ><img src="./assets/img/icons/IG.svg" alt="instagram"
+              ><img src="./assets/img/icons/IG.svg" alt="instagram"class="animate__animated animate__bounceInDown"
             /></a>
           </div>
         </div>
@@ -114,14 +114,14 @@
     </section>
     <!-- Mobile jumbotron text -->
     <section class="mobile-jumbo">
-      <div class="container">
+      <div class="container" data-aos="fade-right" data-aos-duration="1000">
         <p class="jumbotron-text mobile-text">
           I pay close attention to<br />
           <span>details</span>, every single <span>pixel</span> <br />matters to
           me<span>.</span>
         </p>
 
-        <button type="button" class="btn btn-outline btn-jumbotron">
+        <button type="button" class="btn btn-outline btn-jumbotron animate__animated animate__rubberBand" style="animation-delay: 1000ms;">
           BOOK A SESSION
         </button>
       </div>
@@ -132,7 +132,7 @@
       <div class="container">
         <div class="row mobile-about">
           <div class="col-md-6">
-            <div class="about-image">
+            <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
               <img
                 class=""
                 src="https://i.postimg.cc/hG3VhTWH/about-img.png"
@@ -141,7 +141,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 about-text-container">
+          <div class="col-md-6 about-text-container" data-aos="fade-left" data-aos-duration="1000">
             <p class="about-header text-center">ABOUT</p>
             <p class="about-name text-justify">I am Karl Kelleher</p>
             <p class="about-text text-justify">
@@ -162,7 +162,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="row about2">
+        <div class="row about2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
           <div class="col-6 col-md-3 about-count">
             <p class="photo">185</p>
             <p class="photo-text">
@@ -201,7 +201,8 @@
       <div class="container">
         <p class="portfolio-header text-center">PORTFOLIO</p>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3"data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-back"
+          data-aos-delay="900">
             <div class="card">
               <img
                 class="card-img-top"
@@ -213,7 +214,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3"data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-back"
+          data-aos-delay="600">
             <div class="card">
               <img
                 class="card-img-top"
@@ -225,7 +227,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3"data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-back" data-aos-delay="300">
             <div class="card">
               <img
                 class="card-img-top"
@@ -237,7 +239,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3"data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-back">
             <div class="card">
               <img
                 class="card-img-top"
@@ -345,7 +347,7 @@
         <div
           class="container d-flex justify-content-center align-content-center flex-wrap"
         >
-          <button class="btn project-btn1">
+          <button class="btn project-btn1 animate__animated animate__rubberBand" style="animation-iteration-count: infinite;">
             BOOK A SESSION
           </button>
           <button class="btn project-btn2 d-none">VIEW ALL</button>
@@ -593,7 +595,7 @@
     <!-- AOS LIBRARY -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+       AOS.init();
     </script>
   </body>
 </html>

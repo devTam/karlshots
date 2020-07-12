@@ -29,6 +29,9 @@ body {
     --background-color: #282828;
   } 
 
+
+
+
   /* test scroll spy */
   .nav-tabs {
       border: none!important;
@@ -371,9 +374,9 @@ body {
         transition: transform .5s;
     }
     
-    #portfolio .card:hover {
+    /* #portfolio .card:hover {
         transform: scale(1.05);
-    }
+    } */
 
     .col-md-3 .card {
         box-shadow: 2px 7px 16px rgba(11, 11, 11, 0.25);
@@ -399,6 +402,18 @@ body {
         padding-top: 50px;
         margin-bottom: 50px;
         background: #0F0F0F;
+    }
+
+    #projects img {
+        transition: transform .8s ease-out;
+    }
+
+    #projects img:hover {
+        transform: scale(1.1);
+    }
+
+    #projects button:hover {
+        animation-iteration-count: unset!important;
     }
 
     .projects-header {
