@@ -123,6 +123,7 @@ a.nav-link.active {
 
 .nav-custom {
   background: rgba(0, 0, 0, 0.9) !important;
+  overflow: hidden;
 }
 
 .nav-custom li {
